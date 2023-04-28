@@ -1,5 +1,27 @@
-<ul>
-  <li *ngFor="let planta of plantas">
-   {{planta.nombre_comun}}
-  </li>
-</ul>
+
+<div class="container">
+  <h1>Vivero El Oñoto</h1>
+  <hr>
+  <img src="https://img.freepik.com/fotos-premium/fondo-primavera-estilo-dibujos-animados-magnolia-cereza-sakura-rosa-purpura-flor-paisaje-horizontal-asiatico_78450-2856.jpg?w=2000" class="img-fluid" alt="...">
+  <hr>
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre común</th>
+        <th scope="col">Tipo</th>
+        <th scope="col">Clima</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr *ngFor="let planta of plantas">
+        <th scope="row">{{planta.id}}</th>
+        <td>{{planta.nombre_comun}}</td>
+        <td>{{planta.tipo}}</td>
+        <td>{{planta.clima}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
