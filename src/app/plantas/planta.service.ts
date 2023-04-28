@@ -17,6 +17,7 @@ export class PlantaService {
     plantas=this.http.get<Planta[]>(this.apiUrl)
     console.log(plantas)
     return plantas;
+
    }
 
 
