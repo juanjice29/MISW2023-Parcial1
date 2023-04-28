@@ -15,7 +15,6 @@ export class PlantaService {
 
     let plantas:Observable<Planta[]>;
     plantas=this.http.get<Planta[]>(this.apiUrl)
-    console.log(plantas)
     return plantas;
 
    }
