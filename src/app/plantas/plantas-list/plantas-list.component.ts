@@ -17,7 +17,9 @@ export class PlantasListComponent implements OnInit {
   constructor(private plantaService:PlantaService) { }
   getPlantas():void{
     this.plantaService.getPlantas().subscribe((elem)=>{
-      this.plantas=elem;
+      this.plantas=elem.sort((a,b)=>{
+        return a.id-b.id
+      });
     })
   }
   getReportePlantas(){

@@ -1,3 +1,5 @@
-img{
-
+thead {
+  background: rgb(65, 64, 64);
+  color: white;
 }
+.planta:hover {background-color: coral;}
